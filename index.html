@@ -2,28 +2,43 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Well-Lit AR.js Scene</title>
+    <title>Virtual 3D Scene with Car</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
-<body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-        <!-- Ambient Light for general illumination -->
-        <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
+<body>
+    <a-scene background="color: #FFF">
+        <!-- Camera setup allowing for look controls -->
+        <a-camera look-controls enabled="true" position="0 1.6 0"></a-camera>
+      
+       <!-- Softly Positioned Directional Lights -->
+        <a-light type="directional" color="#FFFFFF" intensity="0.3" position="-1 1 1"></a-light>
+        <a-light type="directional" color="#FFFFFF" intensity="0.2" position="1 1 -1"></a-light> <!-- Softly Positioned Directional Lights -->
+        <a-light type="directional" color="#FFFFFF" intensity="0.2" position="8 1 -3"></a-light>
+      
+      <!-- Directional Lights strategically placed around the car -->
+      <!-- Front -->
+      <a-light type="directional" color="#FFFFFF" intensity="0.1" position="0 1 -5"></a-light>
+      <!-- Back -->
+      <a-light type="directional" color="#FFFFFF" intensity="0.1" position="0 1 5"></a-light>
+      <!-- Left -->
+      <a-light type="directional" color="#FFFFFF" intensity="0.1" position="-5 2 0"></a-light>
+      <!-- Right -->
+      <a-light type="directional" color="#FFFFFF" intensity="0.1" position="5 3 0"></a-light>
+      <!-- Top -->
+      <a-light type="directional" color="#FFFFFF" intensity="0.1" position="0 5 0"></a-light>
+
         
-        <!-- Multiple Directional Lights to simulate sunlight from different directions -->
-        <a-light type="directional" color="#FFFFFF" intensity="0.7" position="-1 1 1"></a-light>
-        <a-light type="directional" color="#FFFFFF" intensity="0.7" position="1 1 -1"></a-light>
-        <a-light type="directional" color="#FFFFFF" intensity="0.7" position="0 2 0"></a-light>
-        
-        <!-- Your GLB model -->
-        <a-entity 
-            gltf-model="https://cdn.glitch.global/21f5d3be-2b79-454c-a09f-6716f3648d13/CAR.glb?v=1711401980072" 
-            position="0 0.5 -3" 
-            rotation="0 180 0" 
-            scale="0.5 0.5 0.5">
-        </a-entity>
+
+        <!--Building -->
+        <a-box position="-5 0.5 -10" rotation="0 45 0" color="#4CC3D9" depth="2" height="10" width="2"></a-box>
+
+        <!-- A model of FGS CAR, using my CDN path-->
+        <a-entity gltf-model="https://cdn.glitch.me/21f5d3be-2b79-454c-a09f-6716f3648d13/CAR2.glb?v=1711658005131" 
+                  position="5 0.5 -10" 
+                  scale="0.5 0.5 0.5"></a-entity>
+
+        <!--Ground plane -->
+        <a-plane position="0 0 -10" rotation="-90 0 0" width="50" height="50" color="#7BC8A4"></a-plane>
     </a-scene>
 </body>
 </html>
-
