@@ -2,15 +2,29 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Virtual 3D Scene with Car</title>
+    <title>FGS WebAR</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+      <!-- THIS MY EVENT LISTENER FOR THE URL-->
+      AFRAME.registerComponent('open-url', {
+        schema: {url: {default: ''}},
+        init: function() {
+          this.el.addEventListener('click', () => {
+            window.location.href = this.data.url;
+          });
+        }
+      });
+    </script>
 </head>
 <body>
+  <!--  THIS IS MY AIM RETICLE FOR THE CURSOR -->
     <a-scene background="color: #FFF">
-        <!-- Camera setup allowing for look controls -->
-        <a-camera look-controls enabled="true" position="0 1.6 0"></a-camera>
+        <!-- Camera setup allowing for look around controls -->
+        <a-camera look-controls enabled="true" position="0 1.6 0">
+            <a-cursor color="yellow"></a-cursor>
+        </a-camera>
       
-       <!-- Softly Positioned Directional Lights -->
+        <!-- Softly Positioned Directional Lights -->
         <a-light type="directional" color="#FFFFFF" intensity="0.3" position="-1 1 1"></a-light>
         <a-light type="directional" color="#FFFFFF" intensity="0.2" position="1 1 -1"></a-light> <!-- Softly Positioned Directional Lights -->
         <a-light type="directional" color="#FFFFFF" intensity="0.2" position="8 1 -3"></a-light>
@@ -27,17 +41,21 @@
       <!-- Top -->
       <a-light type="directional" color="#FFFFFF" intensity="0.1" position="0 5 0"></a-light>
 
-        
-
-        <!--Building -->
-        <a-box position="-5 0.5 -10" rotation="0 45 0" color="#4CC3D9" depth="2" height="10" width="2"></a-box>
+        <!-- Building in which is the object i will be referencing the URL once clicked-->
+        <a-box position="-5 0.5 -10" rotation="0 45 0" color="#4CC3D9" depth="2" height="10" width="2"
+               open-url="url: https://github.com/MicoBledsoe">
+          
+          <!-- MY GITHUB LOGO -->
+            <a-image src="https://cdn.glitch.global/21f5d3be-2b79-454c-a09f-6716f3648d13/GithubLogo.png?v=1711660520651"
+                     position="0 4 1.1" rotation="0 0 0" width="2" height="2">
+            </a-image>
+        </a-box>
 
         <!-- A model of FGS CAR, using my CDN path-->
         <a-entity gltf-model="https://cdn.glitch.me/21f5d3be-2b79-454c-a09f-6716f3648d13/CAR2.glb?v=1711658005131" 
-                  position="5 0.5 -10" 
-                  scale="0.5 0.5 0.5"></a-entity>
-
-        <!--Ground plane -->
+                  position="5 0.5 -10" scale="0.5 0.5 0.5"></a-entity>
+      
+      <!-- My Floor Where the FGS MODEL AND EVERYTHING GOES -->
         <a-plane position="0 0 -10" rotation="-90 0 0" width="50" height="50" color="#7BC8A4"></a-plane>
     </a-scene>
 </body>
