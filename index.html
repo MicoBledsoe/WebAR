@@ -21,7 +21,7 @@
     <a-scene background="color: #FFF">
         <!-- Camera setup allowing for look around controls -->
         <a-camera look-controls enabled="true" position="0 1.6 0">
-            <a-cursor color="yellow"></a-cursor>
+            <a-cursor color="red"></a-cursor>
         </a-camera>
       
         <!-- Softly Positioned Directional Lights -->
@@ -40,6 +40,7 @@
       <a-light type="directional" color="#FFFFFF" intensity="0.1" position="5 3 0"></a-light>
       <!-- Top -->
       <a-light type="directional" color="#FFFFFF" intensity="0.1" position="0 5 0"></a-light>
+      
 
         <!-- Building in which is the object i will be referencing the URL once clicked-->
         <a-box position="-5 0.5 -10" rotation="0 45 0" color="#4CC3D9" depth="2" height="10" width="2"
@@ -50,10 +51,16 @@
                      position="0 4 1.1" rotation="0 0 0" width="2" height="2">
             </a-image>
         </a-box>
+      
 
         <!-- A model of FGS CAR, using my CDN path-->
         <a-entity gltf-model="https://cdn.glitch.me/21f5d3be-2b79-454c-a09f-6716f3648d13/CAR2.glb?v=1711658005131" 
                   position="5 0.5 -10" scale="0.5 0.5 0.5"></a-entity>
+      
+      <!--LINKED IN BUILDING-->
+        <a-box position="-8 0.5 -8" rotation="0 45 0" color="#4CC3D9" depth="3" height="10" width="2"
+              open-url="url: https://www.linkedin.com/in/micobledsoe/">
+        <a-box></a-box>
       
       <!-- My Floor Where the FGS MODEL AND EVERYTHING GOES -->
         <a-plane position="0 0 -10" rotation="-90 0 0" width="50" height="50" color="#7BC8A4"></a-plane>
