@@ -11,6 +11,7 @@
         init: function() {
           this.el.addEventListener('click', () => {
             window.location.href = this.data.url;
+            event.stopPropagation();
           });
         }
       });
@@ -61,8 +62,8 @@
               open-url="url: https://www.linkedin.com/in/micobledsoe/">
         <a-box></a-box>
           
-        <!-- TWITTER BUILDING -->
-        <a-box position="-4 0.5 2" rotation="0 45 0" color="#000000" depth="3" height="10" width="2"
+        <!-- X BUILDING -->
+        <a-box position="-6 0.5 2" rotation="0 45 0" color="#CC3333" depth="3" height="10" width="2"
               open-url="url: https://twitter.com/MicoBledsoe">
         </a-box>
 
