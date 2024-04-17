@@ -1,48 +1,66 @@
-# Hello website!
+<div align="center">
+  <h1 style="font-size: 24px;">FGS WebAR Experience</h1>
+  <img src="https://github.com/MicoBledsoe/WebAR/assets/108279441/bada8b11-a304-492c-9423-ccc44b585919" alt="WebARScene">
+</div>
 
-This is a basic HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen ✨ immediately in the preview window. On the left you'll see the files that make up your site, including HTML, JavaScript, and CSS. You can upload assets like images or audio in `assets`. The rest is up to you and your imagination. 🦄
+<div align="center">
+  <p><strong>FGS WebAR</strong> is an innovative augmented reality web experience built using A-Frame and Three.js. This project leverages the power of WebXR to bring immersive AR directly to the web browser, allowing users to interact with digital objects overlaid onto the real world without the need for any app downloads.</p>
+</div>
 
-_Last updated: 28 Feb 2023_
+## Features
 
-## What's in this project?
+- **Interactive WebAR Elements**: Users can interact with 3D models like cars and buildings directly in their browser.
+- **Direct Links to Professional Profiles**: Each building in the AR scene is clickable and links to relevant professional profiles and social media.
+- **Responsive Design**: Optimized for performance and accessibility across all modern browsers and devices.
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+## Installation Instructions
 
-← `index.html`: This is the main web page for your site. The HTML defines the structure and content of the page using _elements_. You'll see references in the HTML to the JS and CSS files. Try clicking the image in the center of the page!
+### Prerequisites
 
-← `style.css`: CSS files add styling rules to your content. The CSS applies styles to the elements in your HTML page. The style rules also make the image move when you click it.
+No installation is required! Ensure you have a modern web browser that supports WebXR, such as the latest versions of Chrome, Firefox, or Safari.
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript. The code in the JavaScript file runs when the page loads, and when the visitor clicks the button you can add using the code in the TODO.
+### Accessing the Experience
 
-Open each file and check out the comments (in gray) for more info.
+Simply visit the hosted GitHub Pages site to start interacting with the AR experience:
+[FGS WebAR Experience](https://micobledsoe.github.io/WebAR/)
 
-## Try this next 🏗️
+<div align="center">
+  <p><em>Ensure your device's camera permissions are enabled for the full AR experience.</em></p>
+</div>
 
-Take a look in `TODO.md` for next steps you can try out in your new site!
+## Interaction Guide
 
-___Want a minimal version of this project to build your own website? Check out [Blank Website](https://glitch.com/edit/#!/remix/glitch-blank-website)!___
+### Navigation
+- **Interacting with Elements**: Tap on buildings to open links to professional profiles and social media.
 
-## Ready to share your site?
+### User Interface
+- **Zoom and Rotate**: Pinch to zoom in/out and rotate your device to view models from different angles.
+- **Use WASD Keys**: To move around
 
-Add these meta tags for SEO and social sharing between your page `<head></head>` tags, changing the values for your site:
+## Development Challenges and Insights
 
-```
-<link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-<meta name="description" content="A simple website, built with Glitch. Remix it to get your own."/>
-<meta name="robots" content="index,follow" />
-<meta property="og:title" content="Hello World!" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-<meta property="og:description" content="A simple website, built with Glitch. Remix it to get your own."/>
-<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"/>
-<meta name="twitter:card" content="summary" />
-```
+Developing **FGS WebAR** involved overcoming several technical hurdles, including:
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
+- **WebXR Integration**: Integrating WebXR with A-Frame to ensure seamless AR capabilities.
+- **Cross-Platform Compatibility**: Ensuring consistent performance across different devices and browsers.
+- **UI/UX for AR**: Designing intuitive user interactions for AR within a web browser.
 
-## You built this with Glitch!
+### Lessons Learned
 
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
+- **WebAR Potential**: Gained deep insights into the capabilities and future potential of augmented reality on the web.
+- **Advanced A-Frame Techniques**: Leveraged complex components and animations within A-Frame to enhance the user experience.
+- **Performance Optimization**: Focused on optimizing the AR scene for better performance and lower latency.
 
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+## Future Enhancements
+
+- **More Interactive Elements**: Plan to add more interactive features such as video overlays and live data integration.
+- **User Customization**: Introduce options for users to customize 3D models and settings within the AR scene.
+- **Enhanced Mobile Experience**: Improve the interface and interaction for mobile users to enhance accessibility.
+
+## About the Developer
+
+Hello, I'm Mico Bledsoe, a budding AR/VR engineer passionate about pushing the boundaries of digital and real-world interactions through innovative web technologies. This project not only showcases my technical skills but also my commitment to making advanced technology accessible and enjoyable for everyone. Connect with me on [LinkedIn](https://www.linkedin.com/in/micobledsoe) to see more of my work and exchange ideas!
+
+## Collaborators
+
+- **Mico Bledsoe** - [GitHub Profile](https://github.com/MicoBledsoe) | [LinkedIn Profile](www.linkedin.com/in/micobledsoe)
