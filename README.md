@@ -22,7 +22,7 @@ No installation is required! Ensure you have a modern web browser that supports 
 ### Accessing the Experience
 
 Simply visit the hosted GitHub Pages site to start interacting with the AR experience:
-[FGS WebAR Experience](https://micobledsoe.github.io/WebAR/)
+[FGS WebAR Experience](https://micobledsoe.github.io/WebXR/)
 
 <div align="center">
   <p><em>Ensure your device's camera permissions are enabled for the full AR experience.</em></p>
