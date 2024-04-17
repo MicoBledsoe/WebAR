@@ -59,4 +59,4 @@ Developing **FGS WebAR** involved overcoming several technical hurdles, includin
 
 ## About the Developer
 
-Hello, I'm Mico Bledsoe, a aspiring AR/VR engineer passionate about pushing the boundaries of digital and real-world interactions through innovative web technologies. This project not only showcases my technical skills but also my commitment to making advanced technology accessible and enjoyable for everyone. Connect with me on [LinkedIn](https://www.linkedin.com/in/micobledsoe) to see more of my work and exchange ideas!
+Hello, I'm Mico Bledsoe, an aspiring AR/VR engineer passionate about pushing the boundaries of digital and real-world interactions through innovative web technologies. This project not only showcases my technical skills but also my commitment to making advanced technology accessible and enjoyable for everyone. Connect with me on [LinkedIn](https://www.linkedin.com/in/micobledsoe) to see more of my work and exchange ideas!
